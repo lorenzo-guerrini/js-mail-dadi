@@ -7,7 +7,7 @@ const input = prompt("Qual è la tua email?");
 let found = false;
 
 for (let i = 0; i <= emailList.length; i++) {
-    if (emailList[i] == input) {
+    if (emailList[i] === input) { //Non basta == perché con input vuoto ti fa accedere ugualmente
         found = true;
         break;
     }
